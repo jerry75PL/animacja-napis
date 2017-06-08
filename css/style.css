@@ -40,17 +40,23 @@
     height: 100%;
     position: absolute;
     background-color: firebrick;
-    opacity: 0.7;
+    opacity: 0.9;
+    right: 0;
     transform: skewX(-15deg);
     animation-name: slide;
-    animation-duration: 5s;
+    animation-duration: 8s;
     animation-iteration-count: infinite;
     animation-direction: normal;
 }
 
 @keyframes slide {
-    0% {width: 10%;}
-    100% {width: 100%;}
+    from {
+    transform: translate3d(-800px, 0, 0);
+  }
+
+  to {
+    transform: none;
+}
 }
 
 
