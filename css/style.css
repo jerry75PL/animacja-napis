@@ -2,8 +2,68 @@
     box-sizing: border-box;
 }
 
+
 * {
-    transition: all 0.3s linear;
+    transition: all 0.3 linear;
 }
 
+
+
 /*my style*/
+
+#main {
+    height: 500px;
+    width: 800px;
+    position: relative;
+    background-color: firebrick;
+    overflow: hidden;
+}
+
+.content {
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: firebrick;
+    font-size: 90px;
+    line-height: 450px;
+    color: #fff;
+    text-align: center;
+}
+
+.mask {
+    width: 10%;
+    height: 100%;
+    position: absolute;
+    background-color: firebrick;
+    opacity: 0.7;
+    transform: skewX(-15deg);
+    animation-name: slide;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes slide {
+    0% {width: 10%;}
+    100% {width: 100%;}
+}
+
+
+
+/*
+ 0% {left: 0;}
+    10%{left:10%;}
+    20%{left:20%;}
+    30%{left:30%;}
+    40%{left:40%;}
+    50%{left:50%;}
+    60%{left:60%;}
+    70%{left:70%;}
+    80%{left:80%;}
+    90%{left:90%;}
+    100% {left: 100%;}*/
