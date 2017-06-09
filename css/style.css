@@ -3,9 +3,6 @@
 }
 
 
-* {
-    transition: all 0.3 linear;
-}
 
 
 
@@ -36,26 +33,28 @@
 }
 
 .mask {
-    width: 10%;
-    height: 100%;
+    width: 50%;
+    height: 50%;
+    top: 25%;
+    border-radius: 80%;
     position: absolute;
     background-color: firebrick;
     opacity: 0.9;
     right: 0;
-    transform: skewX(-15deg);
     animation-name: slide;
     animation-duration: 8s;
     animation-iteration-count: infinite;
     animation-direction: normal;
+    animation-timing-function: linear;
 }
 
 @keyframes slide {
     from {
-    transform: translate3d(-800px, 0, 0);
+    transform: translate3d(-800px, 0, 0) skewX(-15deg);
   }
 
   to {
-    transform: none;
+    transform: translate3d(350px, 0, 0) skewX(-15deg);
 }
 }
 
