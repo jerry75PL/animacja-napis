@@ -3,9 +3,6 @@
 }
 
 
-
-
-
 /*my style*/
 
 #main {
@@ -50,14 +47,14 @@
 
 @keyframes slide {
     from {
-    transform: translate3d(-800px, 0, 0) skewX(-15deg);
-  }
-
-  to {
-    transform: translate3d(350px, 0, 0) skewX(-15deg);
+        transform: translate3d(-800px, 0, 0) skewX(-15deg);
+        filter: blur(30px);
+    }
+    to {
+        transform: translate3d(350px, 0, 0) skewX(-15deg);
+        filter: blur(30px);
+    }
 }
-}
-
 
 
 /*
